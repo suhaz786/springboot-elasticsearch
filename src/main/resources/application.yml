@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: sample-spring-elasticsearch
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: 192.168.0.104:9300
+
+  elasticsearch:
+    rest:
+      uris: http://192.168.0.104:9200
+
+initial-import:
+  enabled: false
+
+server:
+  port: 8002
